@@ -102,6 +102,8 @@ nav button {
   margin: 0;
   padding-bottom: 5vw;
   position: relative;
+  
+  padding-right: 3vw;
 }
 
 .about-me img {
