@@ -13,18 +13,20 @@
     />
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Nav Bar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top px-0">
-        <a class="navbar-brand ml-1" href="#">Juan José Sarsotti</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark px-0">
+        <a class="navbar-brand ml-3" href="#">Juan José Sarsotti</a>
+        <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#bienvenido">Welcome</a>
+          <div class="navbar-nav ml-3">
+            <a class="nav-item nav-link" href="#bienvenido">Home</a>
             <a class="nav-item nav-link" href="#quiensoy">Acerca de mi</a>
             <a class="nav-item nav-link" href="#tecnologias">Tecnologias</a>
             <a class="nav-item nav-link" href="#proyectos">Proyectos</a>
@@ -37,11 +39,11 @@
      <div id="bienvenido" class="hero-image">
         <div class="hero-text">
           <h1><span class="px-3">Juan José</span></h1>
-          <p><span class="px-2">And I'm a FrontEnd Developer</span></p>
+          <p><span class="px-2">I'm a FrontEnd Developer</span></p>
         </div>
       </div>
     <!-- Acerca de mi -->
-    <div id="quiensoy" class="container-fluid pt-5"">
+    <div id="quiensoy" class="container-fluid"">
       <h2 >¿Quién soy?</h2>
     <div  class="about-me">
       <div  class="about-me-text">
@@ -61,17 +63,18 @@
     <div id="tecnologias" class="techs pt-5">
       <h2>¿Qué sé?</h2>
       <div class="tech-container">
-        <img src="./Imagenes/icons8-html-5.svg" alt="HTML5" />
-        <img src="./Imagenes/icons8-css3.svg" alt="CSS3" />
-        <img src="./Imagenes/icons8-javascript.svg" alt="JAVASCRIPT" />
-        <img src="./Imagenes/icons8-oreja.svg" alt="BOOTSTRAP" />
-        <img src="./Imagenes/icons8-sass.svg" alt="SASS" />
-        <img src="./Imagenes/icons8-git.svg" alt="GIT" />
+        <div class="tech-box"><img src="./Imagenes/icons8-html-5.svg" alt="HTML5" /></div>
+        <div class="tech-box"><img src="./Imagenes/icons8-css3.svg" alt="CSS3" /></div>
+        <div class="tech-box"><img src="./Imagenes/icons8-javascript.svg" alt="JAVASCRIPT" /></div>
+        <div class="tech-box"><img src="./Imagenes/icons8-oreja.svg" alt="BOOTSTRAP" /></div>
+        <div class="tech-box"><img src="./Imagenes/icons8-sass.svg" alt="SASS" /></div>
+        <div class="tech-box"><img src="./Imagenes/icons8-git.svg" alt="GIT" /></div>
       </div>
     </div>
     <!-- Projectos -->
-    <div id="proyectos" class="projects container pt-4">
-      <h2 class="my-4">¿Qué hice?</h2>
+    <div id="proyectos" class="projects container-fluid pt-4">
+      <div class="container">
+        <h2 class="my-4">¿Qué hice?</h2>
       <div class="row row-cols-1 row-cols-md-2">
         <div class="col mb-4">
           <div class="card h-100">
@@ -111,9 +114,10 @@
           </div>
         </div>
       </div>
+      </div>
     </div>  
     <!-- Info para contacto -->
-    <div id="contactame" class="contact-me container pb-5">
+    <div id="contactame" class="contact-me container2 pb-5">
       <h2 class="py-5">¿Donde me encontrás?</h2>
       <div class="social-container">
         <a href="https://www.github.com/cocosar"><img src="./Imagenes/icons8-github.svg" alt="Github"></a>

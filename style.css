@@ -1,36 +1,56 @@
 html {
-    scroll-behavior: smooth;
-  }
-
-body {
-    padding-top: 50px;
+  scroll-behavior: smooth;
 }
 
-body, html {
-    height: 100%;
-    width: 100%;
+body {
+  padding-top: 50px;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  
+  background-color: rgb(243, 243, 243);
+}
+
+* {
+  font-family: MontSerrat;
 }
 
 nav {
-    width: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0px 6px 36px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 36px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 36px -4px rgba(0, 0, 0, 0.75);
+  
+  background-color: #1B191F;
 }
 
+nav *{
+  background-color: #1B191F;
+  color: white;
+}
+
+nav button {
+  color: white;
+}
 
 
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("./Imagenes/20181027_172335.jpg");
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("./Imagenes/20181027_172335.jpg");
   /* Set a specific height */
   height: 100%;
-
   /* Position and center the image to scale nicely on all screens */
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+
 
 /* Welcome page */
 .hero-text {
@@ -44,24 +64,43 @@ nav {
 .hero-text span {
   background-color: rgb(110, 110, 110);
 }
-.hero-text p{
+.hero-text p {
   font-style: italic;
-  font-size: 1.5vw;
+  font-size: 1.9vw;
 }
 
 .hero-text h1 {
-  font-size: 6vw;
+  font-size: 7vw;
+  font-weight: 600;
 }
 
 /* About-me section */
 
-.about-me{
-  height: 50%;
+#quiensoy:after{
+  content: "";
+  width: 0;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  /* background-color: #1B191F; */
+  border-color: white;
+  border-left: 100vw solid transparent;
+  border-bottom: 50px solid #1B191F;
+  border-top: 0px solid transparent;
+  position: absolute;
+  top:0px;
+  right: 0;
+  transform: translateY(-99%);
+}
+
+
+.about-me {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5vh 5vw;
-  
+  margin: 0;
+  padding-bottom: 5vw;
   position: relative;
 }
 
@@ -71,56 +110,134 @@ nav {
   width: 16vw;
   object-fit: cover;
   transform: rotate(-40deg);
+  align-self: start;
 }
 
-.about-me-text p{
-  
-  text-align: right;
-  
-
+.about-me-text p {
+  text-align: left;
+  color: #98949E;
+  padding-right: 3vw;
+  padding-left: 3vw;
 }
 .container-fluid {
-  margin-top: 10vh;
+  padding-top: 10vh;
+  background-color: #1B191F;
+  position: relative;
 }
-
 
 .container-fluid h2 {
   position: block;
   text-align: center;
   top: 20%;
+  color: rgb(243, 243, 243);
 }
 
 /* My tech */
-.techs{
-  margin: 5vh 5vw;
+
+#tecnologias:after{
+  content: "";
+  width: 0;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  /* background-color: #1B191F; */
+  border-color: white;
+  border-left: 100vw solid transparent;
+  border-bottom: 50px solid rgb(243, 243, 243);
+  border-top: 0px solid transparent;
+  position: absolute;
+  top:0px;
+  right: 0;
+  transform: translateY(-95%);
+}
+
+#tecnologias:before{
+  content: "";
+  width: 0;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  /* background-color: #1B191F; */
+  border-right: 100vw solid transparent;
+  border-bottom: 0px solid transparent;
+  border-top: 50px solid #eaeaea;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  transform: translateY(98%);
+  z-index: 1;
+  
+}
+
+
+
+.techs {
+  padding: 5vh 5vw;
   display: flex;
   flex-flow: column;
   align-items: center;
+  background-color: rgb(243, 243, 243);
+  position: relative;
 }
 
 .techs h2 {
   text-align: center;
 }
 
-.tech-container{
+.tech-container {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
 }
 
-.tech-container img{
-  height: 150px;
-  margin: 0 5vw;
+.tech-box img {
+  height: 10vh;
+  width: 10vh;
 }
 
+.tech-box {
+  border-radius: 30%;
+  padding: 50px;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 2px 35px 112px -17px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 2px 35px 112px -17px rgba(0, 0, 0, 0.18);
+  box-shadow: 2px 35px 112px -17px rgba(0, 0, 0, 0.18);
+}
 
-.projects img{
+.projects img {
   height: 35vh;
   object-fit: cover;
 }
 .projects h2 {
   text-align: center;
+}
+
+#contactame:after{
+  content: "";
+  width: 0;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  /* background-color: #1B191F; */
+  border-color: white;
+  border-left: 100vw solid transparent;
+  border-bottom: 50px solid rgb(243, 243, 243);
+  border-top: 0px solid transparent;
+  position: absolute;
+  top:0px;
+  right: 0;
+  transform: translateY(-98%);
+  z-index: 1;
+}
+.contact-me {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  position: relative;
 }
 
 .contact-me h2 {
@@ -132,24 +249,29 @@ nav {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  
 }
 
 .social-container a {
-  border: 1px solid black;
-  border-radius: 50%;
-  height: 14vh;
-  width: 14vh;
+  border-radius: 30%;
+  height: 15vh;
+  width: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+  background-color: white;
+  -webkit-box-shadow: 2px 35px 112px -17px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 2px 35px 112px -17px rgba(0, 0, 0, 0.18);
+  box-shadow: 2px 35px 112px -17px rgba(0, 0, 0, 0.18);
 }
 
 .social-container img {
+ 
   height: 10vh;
 }
 
-footer{
+footer {
   width: 100%;
   background-color: rgb(212, 212, 212);
 }
@@ -160,8 +282,8 @@ footer p {
   text-align: center;
 }
 
-@media only screen and (max-width: 1024px){
-  .hero-text h1{
+@media only screen and (max-width: 1024px) {
+  .hero-text h1 {
     font-size: 80px;
   }
 
@@ -170,9 +292,9 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 760px){
-  .hero-text h1{
-    font-size: 40px;
+@media only screen and (max-width: 860px) {
+  .hero-text h1 {
+    font-size: 6vw;
   }
 
   .hero-text p {
@@ -180,8 +302,8 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 400px){
-  .hero-text h1{
+@media only screen and (max-width: 400px) {
+  .hero-text h1 {
     font-size: 30px;
   }
 
@@ -190,8 +312,8 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 320px){
-  .hero-text h1{
+@media only screen and (max-width: 320px) {
+  .hero-text h1 {
     font-size: 20px;
   }
 
