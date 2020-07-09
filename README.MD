@@ -1,5 +1,7 @@
 
 # Mi landing page. WIP
+## Ver avances en:
+https://landingpage-kohl.vercel.app/
 ## TODO:
 - Links en cards
 KIND OF - Buscar una paleta de colores acorde y dar colores a divs
