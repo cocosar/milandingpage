@@ -260,6 +260,16 @@ nav button {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 760px) {
+  .projects .card {
+    width: 80vw;
+    height: 70vh;
+  }
+  .projects .card img {
+    height: 300px;
+  }
+}
+
 .projects .slick-active {
   background-color: white;
   -webkit-transition: background-color 0.3s ease;

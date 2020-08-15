@@ -203,12 +203,22 @@ nav {
         background-color: rgb(157, 159, 165);
         width: 450px;
         height: 600px;
+        
         .card-body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
         transition: background-color 0.4s ease;
+    }
+    @media screen and (max-width: 760px){
+        .card {
+            width: 80vw;
+            height: 70vh;
+            img {
+                height: 300px;
+            }
+        }
     }
     .slick-active {
         background-color: white;
