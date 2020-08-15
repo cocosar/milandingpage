@@ -106,16 +106,19 @@ nav button {
 }
 
 .about-me img {
-  border-radius: 100%;
+  border-radius: 50%;
   height: 16vw;
   width: 16vw;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+}
+
+.about-me img#rotate {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
 }
 
 .about-me-text p {
@@ -227,13 +230,44 @@ nav button {
 }
 
 .tech-box img {
-  height: 10vh;
-  width: 10vh;
+  width: 100px;
+  height: auto;
 }
 
 /* My projects*/
+.projects {
+  height: 100vh;
+}
+
 .projects .card {
   background-color: #9d9fa5;
+  width: 450px;
+  height: 600px;
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.projects .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects .slick-active {
+  background-color: white;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.projects .especial-project.slick-active {
+  background-color: #e93737;
 }
 
 .projects a {
@@ -241,18 +275,23 @@ nav button {
   color: black;
 }
 
-.projects a:hover {
-  color: gray;
-}
-
 .projects img {
-  height: 35vh;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 1;
+}
+
+.projects img:hover {
+  opacity: 0.8;
 }
 
 .projects h2 {
   text-align: center;
+}
+
+.slick-list.draggable.slick-list.draggable {
+  overflow-x: hidden;
 }
 
 /* Contact-me*/
@@ -315,6 +354,15 @@ nav button {
   background-color: white;
   -webkit-box-shadow: 0px 10px 41px -12px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 41px -12px rgba(0, 0, 0, 0.75);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.social-container a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .social-container img {
