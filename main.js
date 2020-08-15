@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function () {
-    
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
     $(".slicking").slick({
         centerMode: true,
         centerPadding: "60px",
